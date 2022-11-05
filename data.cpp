@@ -1,7 +1,7 @@
 #include <iostream>
 #include "data.h"
-#include <string>
 #include "kontrola_liczb.h"
+#include <string>
 
 using namespace std;
 
@@ -39,10 +39,10 @@ int nr_stolika() {
 	{
 		blad = false;
 		cout << "Podaj nr stolika ktory chcesz zajac (1-50)"<<endl;
-		nr = kontrola();
+		nr = kontrola_liczby();
 		if (nr > 50 || nr < 1)
 		{
-			cout << "Bledny numer stolika";
+			cout << "Bledny numer stolika"<<endl;
 			blad = true;
 		}
 	} 

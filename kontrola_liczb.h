@@ -1,4 +1,4 @@
 #pragma once
 #include <iostream>
 
-int kontrola();
+int kontrola_liczby();

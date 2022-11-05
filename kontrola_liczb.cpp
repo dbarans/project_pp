@@ -2,7 +2,7 @@
 #include "kontrola_liczb.h"
 using namespace std;
 
-int kontrola() {
+int kontrola_liczby() {
 	int liczba;
 	bool blad = false;
 	do 
