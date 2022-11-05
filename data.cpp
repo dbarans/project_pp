@@ -1,6 +1,7 @@
 #include <iostream>
 #include "data.h"
 #include <string>
+#include "kontrola_liczb.h"
 
 using namespace std;
 
@@ -32,6 +33,22 @@ bool podaj_miejsce()
 	}
 };
 int nr_stolika() {
-	int nr = rand() % 10;
-	return nr+1;
+	int nr;
+	bool blad;
+	do
+	{
+		blad = false;
+		cout << "Podaj nr stolika ktory chcesz zajac (1-50)"<<endl;
+		nr = kontrola();
+		if (nr > 50 || nr < 1)
+		{
+			cout << "Bledny numer stolika";
+			blad = true;
+		}
+	} 
+	while (blad);
+	
+
+	
+	return nr;
 };

@@ -8,4 +8,3 @@ bool podaj_miejsce();
 
 int nr_stolika();
 
-int nr;
