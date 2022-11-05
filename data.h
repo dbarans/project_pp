@@ -4,4 +4,8 @@ using namespace std;
 
 string podaj_imie();
 
-int podaj_miejsce();
+bool podaj_miejsce();
+
+int nr_stolika();
+
+int nr;

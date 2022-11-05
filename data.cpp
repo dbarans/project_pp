@@ -10,8 +10,8 @@ string podaj_imie() {
 	cin >> imie;
 	return imie;
 };
-int podaj_miejsce() // zwraca 1 - na miejscu 2 - dowoz
-{ 
+bool podaj_miejsce()
+{
 	string odp;
 	cout << "Czy chcesz zlozyc zamowienie na miejscu czy z dowozem?" << endl;
 	while (true) {
@@ -19,18 +19,19 @@ int podaj_miejsce() // zwraca 1 - na miejscu 2 - dowoz
 		cin >> odp;
 		if (odp == "M" || odp == "m")
 		{
-			cout << "na miejscu";
-			return 1;
+			return true;
 		}
 		else if (odp == "D" || odp == "d")
-			{
-				cout << "dowoz";
-				return 2;
-			}
-			else {
-				cout << "Podano bledna odpowiedz!" << endl;
-			}
-			
-		
-	} 
-}
+		{
+			return false;
+		}
+		else
+		{
+			cout << "Podano bledna odpowiedz!" << endl;
+		}
+	}
+};
+int nr_stolika() {
+	int nr = rand() % 10;
+	return nr+1;
+};
