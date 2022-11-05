@@ -2,11 +2,17 @@
 #include "data.h"
 using namespace std;
 
-int odp = 0;
 
 int main() {
-    string imie = podaj_imie();
-    int miejsce = podaj_miejsce();
+    string imie = podaj_imie(); 
+    bool na_miejscu = podaj_miejsce();
+    if (na_miejscu) {
+        nr = nr_stolika();
+    }
+    else
+    {
+
+    }
     
     return 0;
 }
