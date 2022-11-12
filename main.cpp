@@ -1,9 +1,10 @@
 ﻿#include <iostream>
 #include "data.h"
 #include "kontrola_liczb.h"
+#include "czas.h"
 using namespace std;
 
-int nr, nr_domu, nr_mieszkania;
+int nr, nr_domu, nr_mieszkania, minuta, godzina, dzien_tyg;
 string imie, miejscowosc, ulica;
 bool na_miejscu;
 
@@ -17,7 +18,9 @@ int main() {
     else
     {
         podaj_adres(miejscowosc, ulica, nr_domu, nr_mieszkania);
+        czas(minuta, godzina, dzien_tyg);
     }
+
 
     return 0;
 }
