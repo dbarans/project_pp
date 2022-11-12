@@ -8,3 +8,4 @@ bool podaj_miejsce();
 
 int nr_stolika();
 
+void podaj_adres(string &, string &, int &, int &);

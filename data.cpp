@@ -48,7 +48,16 @@ int nr_stolika() {
 	} 
 	while (blad);
 	
-
-	
 	return nr;
+};
+void podaj_adres(string & miejscowosc, string & ulica, int & nr_domu, int & nr_mieszkania)
+{
+	cout << "Podaj miejscowosc: ";
+	cin >> miejscowosc;
+	cout << "ulica: ";
+	cin >> ulica;
+	cout << "numer domu: ";
+	nr_domu = kontrola_liczby();
+	cout << "numer mieszkania : ";
+	nr_mieszkania = kontrola_liczby();
 };
