@@ -9,3 +9,5 @@ bool podaj_miejsce();
 int nr_stolika();
 
 void podaj_adres(string &, string &, int &, int &);
+
+void podaj_godzine(int, int, int, int &, int &);
